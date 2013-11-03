@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="BForms.MVC.08b4ed3a-48a3-4f11-8318-660c16ce3a4f" Version="1.0" Language="en-US" Publisher="Stefan Prodan" />
+    <DisplayName>BForms Template ASP.NET MVC 5</DisplayName>
+    <Description xml:space="preserve">BForms Web application integrates Bootstrap, jQuery, RequireJS and various UI controls with ASP.NET MVC 5 (Razor View Engine)</Description>
+    <MoreInfo>http://bforms.stefanprodan.eu</MoreInfo>
+    <License>Content\License.txt</License>
+    <GettingStartedGuide>http://bforms.stefanprodan.eu/Start/Form</GettingStartedGuide>
+    <ReleaseNotes>https://github.com/stefanprodan/BForms/releases</ReleaseNotes>
+    <Icon>Content\icon.png</Icon>
+    <PreviewImage>Content\preview.jpg</PreviewImage>
+    <Tags>UI Framework, Bootstrap 3, ASP.NET MVC, RequireJS, HTML5, Responsive Design, Mobile First</Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[12.0]" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\BForms ASP.NET MVC.zip" />
+  </Assets>
+</PackageManifest>

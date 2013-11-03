@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4A51168E-4E5A-44A8-BECD-B528C1ED989D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication</RootNamespace>
+    <AssemblyName>WebApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="BForms">
+      <HintPath>..\packages\BForms.MVC.1.0.0.11\lib\net45\BForms.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.5\lib\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RequireJsNet, Version=1.0.13.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\RequireJsNet.1.0.13.0\lib\net45\RequireJsNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.2\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.0.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.0.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.0.0\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.0.0\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.0.0\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Images\favicon.png" />
+    <Content Include="Content\Images\logo-bforms.png" />
+    <Content Include="Content\Images\logo-bforms_small.png" />
+    <Content Include="Content\Images\preloader.gif" />
+    <Content Include="Content\Stylesheets\Site.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\BForms\Bundles\css\stylesheets.css" />
+    <Content Include="Scripts\BForms\Bundles\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Scripts\BForms\Bundles\images\icn-arr-down.png" />
+    <Content Include="Scripts\BForms\Bundles\images\icn-arr-left.png" />
+    <Content Include="Scripts\BForms\Bundles\images\icn-arr-right.png" />
+    <Content Include="Scripts\BForms\Bundles\images\icn-arr-up.png" />
+    <Content Include="Scripts\BForms\Bundles\images\icn-calendar.png" />
+    <Content Include="Scripts\BForms\Bundles\images\icn-down_arrow-small.png" />
+    <Content Include="Scripts\BForms\Bundles\images\icn-grippy.png" />
+    <Content Include="Scripts\BForms\Bundles\images\icn-order_down.png" />
+    <Content Include="Scripts\BForms\Bundles\images\icn-order_up.png" />
+    <Content Include="Scripts\BForms\Bundles\images\icn-remove.png" />
+    <Content Include="Scripts\BForms\Bundles\images\icn-right_arrow-small.png" />
+    <Content Include="Scripts\BForms\Bundles\images\icn-time.png" />
+    <Content Include="Scripts\BForms\Bundles\images\preloader-small.gif" />
+    <Content Include="Scripts\BForms\Bundles\images\preloader.gif" />
+    <Content Include="Scripts\BForms\Bundles\images\select2-spinner.gif" />
+    <Content Include="Scripts\BForms\Bundles\images\select2.png" />
+    <Content Include="Scripts\BForms\Bundles\images\select2x2.png" />
+    <Content Include="Scripts\BForms\Bundles\js\components.js" />
+    <Content Include="Scripts\BForms\Bundles\js\iefix.js" />
+    <Content Include="Scripts\BForms\Bundles\js\plugins.js" />
+    <Content Include="Scripts\BForms\Bundles\js\widgets.js" />
+    <Content Include="Scripts\BForms\Components\Amplify\amplify.js" />
+    <Content Include="Scripts\BForms\Components\Bootstrap\css\bootstrap.css" />
+    <Content Include="Scripts\BForms\Components\Bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Scripts\BForms\Components\Bootstrap\js\bootstrap.js" />
+    <Content Include="Scripts\BForms\Components\Html5shiv\html5shiv.js" />
+    <Content Include="Scripts\BForms\Components\jQuery-ui\jquery-ui.core.js" />
+    <Content Include="Scripts\BForms\Components\jQuery\jquery-migrate.js" />
+    <Content Include="Scripts\BForms\Components\jQuery\jquery.js" />
+    <Content Include="Scripts\BForms\Components\RequireJS\depend.js" />
+    <Content Include="Scripts\BForms\Components\RequireJS\i18n.js" />
+    <Content Include="Scripts\BForms\Components\RequireJS\require.js" />
+    <Content Include="Scripts\BForms\Components\RequireJS\text.js" />
+    <Content Include="Scripts\BForms\Components\Respond\respond.js" />
+    <Content Include="Scripts\BForms\Images\icn-down_arrow-small.png" />
+    <Content Include="Scripts\BForms\Images\icn-grippy.png" />
+    <Content Include="Scripts\BForms\Images\icn-order_down.png" />
+    <Content Include="Scripts\BForms\Images\icn-order_up.png" />
+    <Content Include="Scripts\BForms\Images\icn-right_arrow-small.png" />
+    <Content Include="Scripts\BForms\Images\preloader-small.gif" />
+    <Content Include="Scripts\BForms\Images\preloader.gif" />
+    <Content Include="Scripts\BForms\Plugins\CheckBoxList\bforms.checklist.js" />
+    <Content Include="Scripts\BForms\Plugins\Datepicker\css\bforms.datepicker.css" />
+    <Content Include="Scripts\BForms\Plugins\Datepicker\images\icn-arr-down.png" />
+    <Content Include="Scripts\BForms\Plugins\Datepicker\images\icn-arr-left.png" />
+    <Content Include="Scripts\BForms\Plugins\Datepicker\images\icn-arr-right.png" />
+    <Content Include="Scripts\BForms\Plugins\Datepicker\images\icn-arr-up.png" />
+    <Content Include="Scripts\BForms\Plugins\Datepicker\images\icn-calendar.png" />
+    <Content Include="Scripts\BForms\Plugins\Datepicker\images\icn-remove.png" />
+    <Content Include="Scripts\BForms\Plugins\Datepicker\images\icn-time.png" />
+    <Content Include="Scripts\BForms\Plugins\Datepicker\js\bforms.datepicker.js" />
+    <Content Include="Scripts\BForms\Plugins\Datepicker\js\bforms.datepicker.range.js" />
+    <Content Include="Scripts\BForms\Plugins\Datepicker\js\bforms.datepicker.tmpl.js" />
+    <Content Include="Scripts\BForms\Plugins\Datepicker\js\i18n\lang.bundle.js" />
+    <Content Include="Scripts\BForms\Plugins\Datepicker\js\lib\ICanHaz.js" />
+    <Content Include="Scripts\BForms\Plugins\Datepicker\js\lib\moment.isocalendar.js" />
+    <Content Include="Scripts\BForms\Plugins\Datepicker\js\lib\moment.js" />
+    <Content Include="Scripts\BForms\Plugins\NavScroll\bforms.navScroll.js" />
+    <Content Include="Scripts\BForms\Plugins\RadioButtonList\bforms.radiolist.js" />
+    <Content Include="Scripts\BForms\Plugins\Select2\css\select2.css" />
+    <Content Include="Scripts\BForms\Plugins\Select2\images\select2-spinner.gif" />
+    <Content Include="Scripts\BForms\Plugins\Select2\images\select2.png" />
+    <Content Include="Scripts\BForms\Plugins\Select2\images\select2x2.png" />
+    <Content Include="Scripts\BForms\Plugins\Select2\js\bforms.select2.js" />
+    <Content Include="Scripts\BForms\Plugins\Select2\js\i18n\select2-ro.js" />
+    <Content Include="Scripts\BForms\Plugins\Select2\js\select2.js" />
+    <Content Include="Scripts\BForms\Plugins\Typeahead\bforms.typeahead.js" />
+    <Content Include="Scripts\BForms\Plugins\Typeahead\typeahead.js" />
+    <Content Include="Scripts\BForms\Plugins\UI\bforms.extensions.js" />
+    <Content Include="Scripts\BForms\Plugins\UI\bforms.initUI.js" />
+    <Content Include="Scripts\BForms\Plugins\UI\bforms.resetInput.js" />
+    <Content Include="Scripts\BForms\Plugins\Validation\bforms.validate.js" />
+    <Content Include="Scripts\BForms\Plugins\Validation\bforms.validate.unobtrusive.js" />
+    <Content Include="Scripts\BForms\Plugins\Validation\i18n\bforms.validate-ro.js" />
+    <Content Include="Scripts\BForms\Stylesheets\bforms.core.css" />
+    <Content Include="Scripts\BForms\Stylesheets\bforms.grid.css" />
+    <Content Include="Scripts\BForms\Stylesheets\bforms.groupeditor.css" />
+    <Content Include="Scripts\BForms\Stylesheets\bforms.pager.css" />
+    <Content Include="Scripts\BForms\Widgets\Grid\js\bforms.editable.js" />
+    <Content Include="Scripts\BForms\Widgets\Grid\js\bforms.form.js" />
+    <Content Include="Scripts\BForms\Widgets\Grid\js\bforms.grid.js" />
+    <Content Include="Scripts\BForms\Widgets\Grid\js\bforms.pager.js" />
+    <Content Include="Scripts\BForms\Widgets\Grid\js\bforms.toolbar.add.js" />
+    <Content Include="Scripts\BForms\Widgets\Grid\js\bforms.toolbar.advancedSearch.js" />
+    <Content Include="Scripts\BForms\Widgets\Grid\js\bforms.toolbar.js" />
+    <Content Include="Scripts\BForms\Widgets\Grid\js\bforms.toolbar.quickSearch.js" />
+    <Content Include="Scripts\BForms\Widgets\Utils\bforms.ajax.js" />
+    <Content Include="Scripts\BForms\Widgets\Utils\bforms.namespace.js" />
+    <Content Include="Scripts\BForms\Widgets\Utils\bforms.themeSelect.js" />
+    <Content Include="Scripts\Controllers\Common\main-menu.js" />
+    <Content Include="Scripts\Controllers\Root\Home\home-index.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\BForms\Stylesheets\bforms.pager.scss" />
+    <Content Include="Scripts\BForms\Stylesheets\bforms.groupeditor.scss" />
+    <Content Include="Scripts\BForms\Stylesheets\bforms.grid.scss" />
+    <Content Include="Scripts\BForms\Stylesheets\bforms.core.scss" />
+    <Content Include="Scripts\BForms\RequireJS.Release.config" />
+    <Content Include="Scripts\BForms\RequireJS.config" />
+    <Content Include="Scripts\BForms\Plugins\Datepicker\css\bforms.datepicker.scss" />
+    <Content Include="Scripts\BForms\Components\Bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Scripts\BForms\Components\Bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Scripts\BForms\Components\Bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Scripts\BForms\Bundles\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Scripts\BForms\Bundles\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Scripts\BForms\Bundles\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="RequireJS.config" />
+    <Content Include="RequireJS.Release.config" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53900</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53900/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
