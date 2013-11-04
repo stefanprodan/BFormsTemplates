@@ -45,8 +45,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="BForms">
-      <HintPath>..\packages\BForms.MVC.1.0.0.11\lib\net45\BForms.dll</HintPath>
+    <Reference Include="BForms, Version=1.0.0.17, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\BForms.MVC.1.0.0.17\lib\net45\BForms.dll</HintPath>
     </Reference>
     <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -280,6 +281,9 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\BForms\Stylesheets\bforms.pager.scss" />
     <Content Include="Scripts\BForms\Stylesheets\bforms.groupeditor.scss" />
+    <Content Include="RequireJS.config" />
+    <Content Include="RequireJS.Release.config" />
+    <Content Include="Views\Shared\NotFound.cshtml" />
     <Content Include="Scripts\BForms\Stylesheets\bforms.grid.scss" />
     <Content Include="Scripts\BForms\Stylesheets\bforms.core.scss" />
     <Content Include="Scripts\BForms\RequireJS.Release.config" />
@@ -291,9 +295,6 @@
     <Content Include="Scripts\BForms\Bundles\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Scripts\BForms\Bundles\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Scripts\BForms\Bundles\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="RequireJS.config" />
-    <Content Include="RequireJS.Release.config" />
-    <Content Include="Views\Shared\NotFound.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\Resource.en-US.resx" />
