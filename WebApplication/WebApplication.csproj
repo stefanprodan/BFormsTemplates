@@ -252,7 +252,9 @@
     <Content Include="Scripts\BForms\Widgets\Utils\bforms.namespace.js" />
     <Content Include="Scripts\BForms\Widgets\Utils\bforms.themeSelect.js" />
     <Content Include="Scripts\Controllers\Common\main-menu.js" />
-    <Content Include="Scripts\Controllers\Root\Home\home-index.js" />
+    <Content Include="Scripts\Controllers\Root\Home\about.js" />
+    <Content Include="Scripts\Controllers\Root\Home\contact.js" />
+    <Content Include="Scripts\Controllers\Root\Home\index.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
