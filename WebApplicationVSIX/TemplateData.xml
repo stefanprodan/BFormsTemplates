@@ -1,0 +1,15 @@
+﻿<TemplateData>
+  <Name>BForms Web Application</Name>
+  <Description>BForms Web application integrates Bootstrap, jQuery, RequireJS and various UI controls with ASP.NET MVC 5 (Razor View Engine)</Description>
+  <ProjectType>CSharp</ProjectType>
+  <ProjectSubType>
+  </ProjectSubType>
+  <SortOrder>1</SortOrder>
+  <CreateNewFolder>true</CreateNewFolder>
+  <DefaultName>BFormsWebApplication</DefaultName>
+  <ProvideDefaultName>true</ProvideDefaultName>
+  <LocationField>Enabled</LocationField>
+  <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+  <Icon>__TemplateIcon.png</Icon>
+  <PreviewImage>__PreviewImage.jpg</PreviewImage>
+</TemplateData>

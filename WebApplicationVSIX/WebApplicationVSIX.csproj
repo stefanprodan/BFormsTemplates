@@ -72,6 +72,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
+    <None Include="TemplateData.xml" />
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>

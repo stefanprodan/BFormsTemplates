@@ -1,5 +1,6 @@
 ﻿@using BForms.Html
 @using RequireJS
+@using WebApplication.Resources
 
 <!DOCTYPE html>
 <html lang="en">
@@ -33,7 +34,9 @@
                 </div>
                 <div class="collapse navbar-collapse navbar-responsive-collapse">
                     <ul class="nav navbar-nav pull-right">
-                        <li><a href="@Url.Action("Index", "Home", new { area = "" })">Home</a></li>
+                        <li><a href="@Url.Action("Index", "Home", new { area = "" })">@Resource.Home</a></li>
+                        <li><a href="@Url.Action("Contact", "Home", new { area = "" })">@Resource.Contact</a></li>
+                        <li><a href="@Url.Action("About", "Home", new { area = "" })">@Resource.About</a></li>
                     </ul>
                 </div>
             </div>

@@ -1,7 +1,11 @@
-﻿@{
-    ViewBag.Title = "About";
+﻿@using BForms.Html
+@using BForms.Models
+@using WebApplication.Resources
+
+@{
+    ViewBag.Title = Resource.About;
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<h1>@ViewBag.Title</h1>
+<h4>@ViewBag.Message</h4>
 
 <p>Use this area to provide additional information.</p>

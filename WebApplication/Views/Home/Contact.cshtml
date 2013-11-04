@@ -1,17 +1,27 @@
-﻿@{
-    ViewBag.Title = "Contact";
+﻿@using BForms.Html
+@using BForms.Models
+@using WebApplication.Resources
+
+@{
+    ViewBag.Title = Resource.Contact;
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<h1>@ViewBag.Title</h1>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
-
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+<div class="row">
+    <div class="col-md-6 col-lg-6">
+        <h4>@Html.BsGlyphicon(Glyphicon.MapMarker) Address</h4>
+        <address>
+            One Microsoft Way<br />
+            Redmond, WA 98052-6399<br />
+            <abbr title="Phone number">Phone:</abbr>
+            425.555.0100
+        </address>
+    </div>
+    <div class="col-md-6 col-lg-6">
+        <h4>@Html.BsGlyphicon(Glyphicon.Envelope) Email</h4>
+        <address>
+            <strong>Support:</strong>   <a href="mailto:Support@example.com">support@example.com</a><br />
+            <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">marketing@example.com</a>
+        </address>
+    </div>
+</div>
